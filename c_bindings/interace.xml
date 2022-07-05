@@ -1,0 +1,15 @@
+<!DOCTYPE node PUBLIC
+    "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+    "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd" >
+<node xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
+  <interface name="org.zbus.MyGreeter1">
+    <method name="SayHello">
+      <arg name="name" direction="in" type="s">
+        <doc:doc><doc:summary>Name of sender</doc:summary></doc:doc>
+      </arg>      
+      <arg name="id" direction="out" type="s">
+        <doc:doc><doc:summary>Output of say_hello</doc:summary></doc:doc>
+      </arg>
+    </method>
+  </interface>
+</node>
